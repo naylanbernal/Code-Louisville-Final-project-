@@ -5,7 +5,7 @@
 }
 body{
     background-color: rgb(235, 213, 213);
-    background-image: url("/images/iStock-1096905166.jpg");
+    background-image: url("/images/paw-print.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -24,17 +24,20 @@ body{
 
 header {
     background-color: rgb(123, 128, 128);
+    background-color: aquamarine;
     width: 100%;
     height: 150px;
+    border-radius: 0 0 25px 25px;
     margin-bottom: 20px;
     z-index: 10;
     position: sticky;
     top: 0px;
 }
 .header-image{
-    width: 315px;
+    height: 130px;
     position: absolute;
     right: 25px;
+    top: 10px;
 }
 h1{
     /* margin: 10px auto 10px auto; */
@@ -47,26 +50,45 @@ h1{
 
 
 
-
-
-
+.search-box-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.search-littleBox{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.search-label{
+    font-weight: 800;
+    margin-right: 10px;
+}
+.search-icon{
+    width: 50px;
+    height: 50px;
+}
 
 .link-list{
     display: none;
     text-decoration: none;
-    
 }
 .ul-list{
-    background-color: rgb(160, 204, 219);
+    background-color: aquamarine;
+    border-radius: 25px;
+    
 }
 .list{
     list-style: none;
     padding: 5px;
+    border-radius: 25px;
     color: black;
     text-align: center;
 }
 .list:hover{
-    background-color: rgb(156, 231, 250);
+    background-color: rgb(156, 231, 250); 
 }
 
 
@@ -111,7 +133,8 @@ h1{
 }
 
 .container-for-cards{
-    background-color: beige;
+    background-color: rgb(153, 250, 169);
+    border-radius: 25px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -120,9 +143,11 @@ h1{
     height: 60%;
 }
 .theCard{
-    background-color: bisque;
+    background-color: rgb(144, 250, 197);
     width: 300px;
-    height: 325px;
+    /* height: 325px; */
+    border-radius: 25px;
+    border: solid 1px black;
     margin: 0 15px 15px 10px;
     display: flex;
     flex-direction: column;
@@ -131,18 +156,50 @@ h1{
 }
 img{
     width: 300px;
+    height: 250px;
 }
 
-.link-contactUsP{
+.link-contactUs{
     display: block;
+    background-color: aquamarine;
+    width: 150px;
+    padding: 10px;
+    margin-top: 50px;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgba(25, 254, 0, 0, 4); 
+    cursor: pointer;
+    
+}
+.link-contactUs:hover{
+    background-color: rgb(156, 231, 250);
 }
 
 
+.breed{
+    background-color: lightblue;
+    width: 580px;
+    height: 100px;
+    margin: 50px;
+}
 
 
-
-
-
+.link-toHeader{
+    display: block;
+    background-color: aquamarine;
+    width: 50px;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+.link-toHeader:hover{
+    background-color: rgb(156, 231, 250);
+}
 
 
 
@@ -155,6 +212,11 @@ img{
     body {
         padding: 50px;
     }
+
+    /* header{
+        position: sticky;
+        top: 0px;
+    } */
 
     form{
         padding: 50px 30px;
