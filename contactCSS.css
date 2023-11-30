@@ -1,5 +1,6 @@
 body{
     background-image: url("/images/paw-print.jpg");
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -9,6 +10,7 @@ body{
 
 
 form {
+    height: 700px;
     margin-top: 80px;
     padding: 20px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
